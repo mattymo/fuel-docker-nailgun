@@ -18,7 +18,7 @@ ADD etc /etc
 
 RUN puppet apply -v /root/init.pp
 
-RUN mkdir -p /usr/local/bin
+RUN mkdir -p /usr/local/bin /var/log/remote /var/www/nailgun
 ADD start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
