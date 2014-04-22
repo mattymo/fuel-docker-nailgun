@@ -1,4 +1,5 @@
 #!/bin/bash
+ln -sf /etc/fuel/version.yaml /etc/nailgun/settings.yaml
 #Run puppet to apply custom config
 puppet apply -v /root/init.pp
 
